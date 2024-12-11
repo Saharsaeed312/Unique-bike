@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Project</title>
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- Sweetalert link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">
+        <img src="Group 4.png" alt="Logo">
+    </div>
+    <ul class="navlinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user"></i>
+    </div>
+</nav>    <!-- main content -->
+    <div class="content">
+        <img src="THE EUPHORIA.png" id="heading">
+        <img src="Bicycle - 1280x811.png" id="bikeImage">
+        <div class="product-selection">
+            <p>Colors</p>
+            <button id="red" onclick="colorfilter('red')"></button>
+            <button id="gray" onclick="colorfilter('blue')"></button>
+            <button id="skyblue" onclick="colorfilter('skyblue')"></button>
+        </div>
+        <div class="product-size">
+            <h3>SIZE</h3>
+            <button onclick="chooseSize('small')" id="small">Small</button>
+            <button onclick="chooseSize('medium')" id="medium">Medium</button>
+            <button onclick="chooseSize('large')" id="large">Large</button>
+        </div>
+    
+        <div class="product-price">
+            <p id="price"><span id="pricevalue">Price </span> $2,500</p>
+            <p id="weight">weight <span id="weightValue">14.18KG</span></p>
+            <button onclick="addToCart('bike')" class="add-to-cart">ADD TO CART</button>
+        </div>
+        <div id="cartPopup" class="cart-popup">
+            <h3>Your Cart</h3>
+            <div id="cartItems" class="cart-items"></div>
+            <button onclick="closeCart()">Close</button>
+        </div>
+        <!-- Slider -->
+            <div class="product-slider">
+                <img src="Rectangle 17.png" id="seven">
+                <img src="Rectangle 19.png" id="nine">
+                <img src="Rectangle 18.png" id="eight">
+            </div>
+            <div class="product-customize">
+                <h1>Customize</h1>
+                <hr>
+                <div class="slider" id="product-slider">
+                    <div class="slides">
+                        <img src="Rectangle 33 (1).png" alt="">
+                        <img src="Rectangle 34.png" alt="">
+                        <img src="Rectangle 35.png" alt="">
+                        
+                        <img src="Rectangle 33 (1).png" alt="">
+                        <img src="Rectangle 34.png" alt="">
+                        <img src="Rectangle 35.png" alt="">
+                        
+                        <img src="Rectangle 33 (1).png" alt="">
+                        <img src="Rectangle 34.png" alt="">
+                        <img src="Rectangle 35.png" alt="">
+                        
+                        <img src="Rectangle 33 (1).png" alt="">
+                        <img src="Rectangle 34.png" alt="">
+                        <img src="Rectangle 35.png" alt="">
+                        
+                        <img src="Rectangle 33 (1).png" alt="">
+                        <img src="Rectangle 34.png" alt="">
+                        <img src="Rectangle 35.png" alt="">
+                    </div>
+                    <div class="next" onclick="moveslide(1,'product-slider')"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                  <!-- Discription -->
+                  <section class="section3">
+                    <div class="tab-container">
+                        <div class="tabs">
+                            <span class="tab active" onclick="showContent('description')">DESCRIPTION</span>
+                            <span class="tab" onclick="showContent('specs')">SPECS</span>
+                        </div>
+                    </div>
+            
+                    <div id="description" class="tab-content">
+                        <h3>Be unique with your choice of ride.</h3>
+                        <p>The EUPHORIA turns obstacles into features. Its nimble, poppy feel makes even the most mundane rides feel
+                            like they’re loaded with features to hop, skip, and jump over. It's the kind of bike that makes new
+                            trails feel as familiar as the back of your hand.</p>
+                        <p>27.5 is the fun-sized wheel size. Smaller wheels provide an ideal balance between toughness and
+                            weight-saving, making them the most fleet-footed, whether launching logs or weaving through stumps. With
+                            its quick and agile character, it has become a go-to plaything for progressive riders worldwide and the
+                            only contender on any backyard trails.</p>
+                    </div>
+                    <div class="btn">
+                        <button>Follow Us on @UNIQUEBIKES</button>
+                    </div>
+                    <div class="product-imgs">
+                        <img src="Rectangle 9.png" id="nine">
+                        <img src="Rectangle 12.png" id="twelleve">
+                        <img src="Rectangle 10.png" id="ten">
+                        <img src="Rectangle 13.png" id="thirtheen">
+                        <img src="Rectangle 11.png" id="fourteen">
+                    </div>
+                    <footer class="footer">
+                            <div class="footer-one">
+                                <img src="Group 4.png" alt="Unique Bikes Logo" class="footer-logo">
+                                <p>&copy; Copyright Unique Bikes</p>
+                            </div>
+                
+                            <div class="footer-two">
+                                <h3>FAQs</h3>
+                                <ul>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Support</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                
+                            <div class="footer-three">
+                                <h3>Support</h3>
+                                <ul>
+                                    <li><a href="#">Assembly Guides</a></li>
+                                    <li><a href="#">Payment</a></li>
+                                    <li><a href="#">Shipping & Delivery</a></li>
+                                    <li><a href="#">Returns & Refunds</a></li>
+                                </ul>
+                            </div>
+                
+                            <div class="footer-four">
+                                <h3>service@uniquebikes.com</h3>
+                                <p>45 Fairground Rd, New York, United States</p>
+                            </div>
+                    </footer>
+                   <!-- Js link -->
+            <script src="script.js"></script>
+</body>
+</html>
